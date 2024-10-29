@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="598.0" maxWidth="881.0" minHeight="598.0" minWidth="881.0" prefHeight="598.0" prefWidth="881.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.gitsushi.Storico">
+   <children>
+      <ImageView fitHeight="441.0" fitWidth="880.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/vaporwaveisdead.jpg" />
+         </image>
+         <StackPane.margin>
+            <Insets top="80.0" />
+         </StackPane.margin>
+      </ImageView>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label style="-fx-background-color: purple;" text="Ecco il resoconto dei tuoi ordini:" textFill="WHITE">
+               <font>
+                  <Font name="MS Outlook" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TableView fx:id="tab" prefHeight="200.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></TableView>
+            <Button mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: purple;" text="torna al menu" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="MS Outlook" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

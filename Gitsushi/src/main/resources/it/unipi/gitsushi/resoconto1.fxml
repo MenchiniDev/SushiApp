@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="598.0" maxWidth="881.0" minHeight="598.0" minWidth="881.0" prefHeight="400.0" prefWidth="881.0" style="-fx-background-color: #b117af;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.gitsushi.Resoconto">
+   <children>
+      <ImageView fitHeight="598.0" fitWidth="899.0" layoutX="-8.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/delfino.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="605.0" fitWidth="336.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/vaporwave-retrowave-japan-kanji-wallpaper-preview.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="387.0" layoutY="143.0" prefHeight="366.0" prefWidth="298.0">
+         <children>
+            <Label style="-fx-background-color: #b117af;" text="Ecco il resoconto del tuo ordine">
+               <font>
+                  <Font name="MS Outlook" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="40.0" />
+               </VBox.margin>
+            </Label>
+            <TableView fx:id="tabOrders" prefHeight="200.0" prefWidth="200.0">
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#WriteAdv" text="Recensisci il piatto!" />
+                        <MenuItem mnemonicParsing="false" onAction="#removeOne" text="elimina una portata" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TableView>
+            <Button mnemonicParsing="false" onAction="#gotoMenu" style="-fx-background-color: #d46ae7;" text="Rifai l'ordine">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin></Button>
+         </children>
+      </VBox>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="687.0" layoutY="407.0" opacity="0.24" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/statue.jpg" />
+         </image></ImageView>
+      <Text fx:id="SaveText" fill="#f2f2f2" layoutX="686.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-background-color: blue;" wrappingWidth="156.67138671875">
+         <font>
+            <Font name="MS Outlook" size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="743.0" layoutY="509.0" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: #d46ae7;" text="Salva" />
+   </children>
+</AnchorPane>

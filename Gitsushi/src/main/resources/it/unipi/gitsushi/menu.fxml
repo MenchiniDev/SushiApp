@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="598.0" maxWidth="881.0" minHeight="598.0" minWidth="881.0" prefHeight="598.0" prefWidth="881.0" style="-fx-background-color: #df80ff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.gitsushi.SecondaryController">
+   <children>
+      <ImageView fitHeight="598.0" fitWidth="469.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/statue.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="244.0" fitWidth="434.0" layoutX="447.0" layoutY="-1.0" opacity="0.52" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/menu.png" />
+         </image></ImageView>
+      <ImageView fitHeight="244.0" fitWidth="434.0" layoutX="446.0" layoutY="354.0" opacity="0.18" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/menu.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="442.0" layoutY="2.0" prefHeight="598.0" prefWidth="441.0">
+         <children>
+            <Label style="-fx-background-color: purple; -fx-background-radius: 5px;" text="Seleziona la portata" textFill="#39d5e0">
+               <font>
+                  <Font name="MS Outlook" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label style="-fx-background-color: purple; -fx-background-radius: 5px;" text="Indica la quantità" textFill="#39d5e0">
+               <font>
+                  <Font name="MS Outlook" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label style="-fx-background-color: purple; -fx-background-radius: 5px;" text="Invia" textFill="#39d5e0">
+               <font>
+                  <Font name="MS Outlook" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="104.0" prefWidth="449.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label prefHeight="5.0" prefWidth="100.0" style="-fx-background-color: #39d5e0; -fx-background-radius: 3px;" text="Cerca pietanza:" textFill="#8f0abf">
+                           <font>
+                              <Font name="MS Outlook" size="14.0" />
+                           </font></Label>
+                        <TextField fx:id="NameString" promptText="Nome Pietanza">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="20.0" top="40.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <Button mnemonicParsing="false" onAction="#showFood" text="Cerca">
+                     <HBox.margin>
+                        <Insets left="10.0" top="66.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#showAll" text="Refresha tabella">
+                     <HBox.margin>
+                        <Insets left="10.0" top="66.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#showrecensioni" text="visualizza recensione/i">
+                     <HBox.margin>
+                        <Insets left="10.0" top="66.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <TableView fx:id="tab" prefHeight="265.0" prefWidth="403.0" style="-fx-background-color: white;">
+               <VBox.margin>
+                  <Insets left="5.0" top="10.0" />
+               </VBox.margin>
+            </TableView>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#goLogin" text="Cambia utente">
+                     <HBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="storico" onAction="#goStorico" prefWidth="85.0" text="Storico">
+                     <effect>
+                        <Blend />
+                     </effect>
+                     <font>
+                        <Font name="Calibri" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="55.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#sendToDb" text="Invia il tuo ordine">
+                     <HBox.margin>
+                        <Insets left="60.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <TableView fx:id="tabOrdinati" layoutX="174.0" layoutY="115.0" prefHeight="159.0" prefWidth="235.0" style="-fx-background-color: trasparent;" />
+   </children>
+</AnchorPane>

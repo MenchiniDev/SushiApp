@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<StackPane maxHeight="598.0" maxWidth="881.0" minHeight="598.0" minWidth="881.0" prefHeight="598.0" prefWidth="881.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.gitsushi.PrimaryController">
+   <children>
+      <ImageView fitHeight="598.0" fitWidth="920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/vaporwave_aesthetic_great_wave_off_kanagawa_by_coitocg_de01ps0-fullview.jpg" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" maxHeight="494.0" maxWidth="804.0" minHeight="494.0" minWidth="666.0" prefHeight="494.0" prefWidth="804.0" spacing="20.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="541.0" prefWidth="335.0">
+                     <children>
+                        <Label fx:id="TextError" style="-fx-background-color: #8e59bf; -fx-background-radius: 4px;" textFill="#ff8e1e">
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="MS Outlook" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="541.0" prefWidth="365.0">
+                     <children>
+                        <ImageView fitHeight="275.0" fitWidth="299.0" opacity="0.75" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/vapor.jpg" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="45.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label style="-fx-background-color: #ffdd99; -fx-background-radius: 5px;" text="Nome Utente">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Calibri" size="17.0" />
+                           </font>
+                           <padding>
+                              <Insets right="2.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="user" maxHeight="25.0" maxWidth="337.0" minHeight="25.0" minWidth="337.0" prefHeight="25.0" prefWidth="337.0">
+                           <VBox.margin>
+                              <Insets left="10.0" right="50.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label style="-fx-background-color: #ffdd99; -fx-background-radius: 5px;" text="Password" textFill="#030303">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Calibri" size="17.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="pass">
+                           <VBox.margin>
+                              <Insets left="10.0" right="50.0" />
+                           </VBox.margin>
+                        </PasswordField>
+                        <HBox prefHeight="124.0" prefWidth="453.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="250.0">
+                                 <children>
+                                    <Button fx:id="primaryButton" onAction="#accedi" prefWidth="85.0" text="Accedi" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Calibri" size="15.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="30.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                    <Button fx:id="reg" onAction="#register" prefWidth="85.0" text="Registrati!">
+                                       <font>
+                                          <Font name="Calibri" size="15.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="30.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox prefHeight="114.0" prefWidth="320.0">
+                                 <children>
+                                    <Button fx:id="carica" onAction="#caricaDB" prefHeight="66.0" prefWidth="85.0" text="Carica db">
+                                       <font>
+                                          <Font name="Calibri" size="15.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="80.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <StackPane.margin>
+            <Insets />
+         </StackPane.margin>
+      </VBox>
+   </children>
+</StackPane>

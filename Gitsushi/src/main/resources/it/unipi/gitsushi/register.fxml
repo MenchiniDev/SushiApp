@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="598.0" maxWidth="881.0" minHeight="598.0" minWidth="881.0" prefHeight="598.0" prefWidth="881.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.gitsushi.Register">
+   <children>
+      <ImageView fitHeight="597.0" fitWidth="599.0" pickOnBounds="true" preserveRatio="true">
+         <StackPane.margin>
+            <Insets left="360.0" />
+         </StackPane.margin>
+         <image>
+            <Image url="@img/istockphoto-1225159119-612x612.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane id="AnchorPane" prefHeight="544.0" prefWidth="827.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="618.0" fitWidth="399.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/71ISH25XNmL.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox layoutX="508.0" layoutY="126.0" prefHeight="376.0" prefWidth="238.0">
+               <children>
+                  <Label style="-fx-background-color: yellow; -fx-background-radius: 10px;" text="Nome Utente" textFill="#aa15b2">
+                     <font>
+                        <Font name="Calibri Light" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="60.0" top="45.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="user" prefHeight="25.0" prefWidth="196.0" />
+                  <Label style="-fx-background-radius: 10px; -fx-background-color: yellow;" text=" Password " textFill="#aa15b2">
+                     <font>
+                        <Font name="Calibri Light" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="75.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <PasswordField fx:id="pass" prefHeight="25.0" prefWidth="196.0" />
+                  <Label style="-fx-background-color: yellow; -fx-background-radius: 10px;" text=" Conferma Password " textFill="#aa15b2">
+                     <font>
+                        <Font name="Calibri Light" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="30.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <PasswordField fx:id="repeat" prefHeight="25.0" prefWidth="196.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#comeBack" text="Torna al Login">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="primaryButton1" mnemonicParsing="false" onAction="#goAccedi" text="Registrati">
+                           <font>
+                              <Font name="Calibri" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Text fx:id="textError" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="223.0">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children>
+         <StackPane.margin>
+            <Insets />
+         </StackPane.margin>
+      </AnchorPane>
+   </children>
+</StackPane>

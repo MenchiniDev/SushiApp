@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="881.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unipi.gitsushi.Recensione">
+   <children>
+      <ImageView fitHeight="702.0" fitWidth="1089.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/vaporwave-digital-art-4k-nl.jpg" />
+         </image>
+      </ImageView>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="598.0" prefWidth="450.0">
+               <children>
+                  <Label style="-fx-background-color: #a325bf; -fx-background-radius: 10px;" text="Recensisci" textFill="WHITE">
+                     <font>
+                        <Font name="MS Outlook" size="26.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="170.0" top="60.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextArea fx:id="motText" prefHeight="320.0" prefWidth="587.0" promptText="voto e motivazione" style="-fx-background-radius: 20px; -fx-background-color: purple;">
+                     <font>
+                        <Font name="MS Outlook" size="17.0" />
+                     </font></TextArea>
+                  <Button mnemonicParsing="false" onAction="#saveAdv" style="-fx-background-color: #a325bf;" text="Invia" textFill="WHITE">
+                     <font>
+                        <Font name="MS Outlook" size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <HBox.margin>
+                  <Insets left="200.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</StackPane>
