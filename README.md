@@ -1,6 +1,6 @@
 # SushiApp 🍣
 
-![Main Interface](./SushiAppImages/Signin.jpg)
+![Main Interface](./SushiAppImages/SIgnin.jpg)
 
 **SushiApp** è un'applicazione desktop completa per ordinare sushi, sviluppata in **Java** con **Spring** e **JavaFX** e basata sullo stile grafico **VaporWave**. Questo progetto si compone di due parti distinte: un server backend e un client desktop. Grazie a questa architettura, **SushiApp** gestisce utenti, ordini, recensioni e molto altro.
 
@@ -30,7 +30,7 @@ La schermata di **Sign On** permette ai nuovi utenti di registrarsi. Viene richi
 
 ### Menu
 
-![Menu](./images/menu.jpg)
+![Menu](./SushiAppImages/menu.jpg)
 
 **Menu** è il cuore dell’app, dove vengono visualizzate tutte le opzioni di sushi disponibili. Gli utenti possono selezionare gli elementi, visualizzare i dettagli e aggiungere articoli al carrello. La selezione e il caricamento dei dati del menu sono gestiti dal server, consentendo aggiornamenti dinamici.
 
