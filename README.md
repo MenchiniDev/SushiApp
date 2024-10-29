@@ -18,7 +18,7 @@
 
 ### Sign In
 
-![Sign In](./SushiAppImages/Signin.pjpg)
+![Sign In](./SushiAppImages/SIgnin.pjpg)
 
 **Sign In** è la schermata iniziale di accesso in cui gli utenti possono autenticarsi inserendo nome utente e password. L’autenticazione sicura viene gestita dal server attraverso Spring Security per proteggere i dati degli utenti.
 
@@ -36,13 +36,13 @@ La schermata di **Sign On** permette ai nuovi utenti di registrarsi. Viene richi
 
 ### Recensione
 
-![Recensione](./images/review.jpg)
+![Recensione](./SushiAppImages/review.jpg)
 
 Nella sezione **Recensione**, gli utenti possono lasciare un feedback sugli ordini effettuati. Il sistema di recensioni è integrato con il backend per salvare le opinioni e visualizzarle a tutti gli utenti, creando una community basata sulle esperienze condivise.
 
 ### Resoconto Ordine
 
-![Resoconto Ordine](./images/order-summary.jpg)
+![Resoconto Ordine](./SushiAppImages/order-summary.jpg)
 
 Questa schermata di **Resoconto Ordine** riepiloga tutti i dettagli dell'ordine prima della conferma. Gli utenti possono verificare quantità, prezzi e dettagli di consegna. La gestione dei dati dell’ordine in tempo reale è supportata dal backend, garantendo precisione e aggiornamenti immediati.
 
