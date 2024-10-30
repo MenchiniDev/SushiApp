@@ -66,8 +66,8 @@ Per avviare il client:
 
 ## Struttura del Repository
 
-- **SushiApp-server/**: contiene il progetto Spring Boot per il server.
-- **SushiApp-client/**: contiene il progetto JavaFX per il client desktop.
+- **Gitsushi/**: contiene il progetto Spring Boot per il server.
+- **ProjectSushiApp/**: contiene il progetto JavaFX per il client desktop.
 
 ## Contribuisci
 
